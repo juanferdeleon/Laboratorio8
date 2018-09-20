@@ -10,14 +10,14 @@ class Square: Behaviors {
         edges = _edges
     }
 
-    override fun getDescription(){
+    override fun getDescription(){//Permite al usuario pedir medidas
         println("Dibujando un cuadrado: ")
         print("Ingrese la arista: ")
         val _edges: String = readLine()!!
         edges = _edges.toInt()
     }
 
-    override fun drawFigure(): String{
+    override fun drawFigure(): String{//Dibuja la figura
         var square: String = ""
         for (i in 1..edges){
             for (j in 1..edges){

@@ -12,7 +12,7 @@ class Rectangle: Behaviors {
         width = _width
     }
 
-    override fun getDescription(){
+    override fun getDescription(){//Permite al usuario pedir medidas
         println("Dibujando un cuadrado: ")
         print("Ingrese lado 1: ")
         val _width: String = readLine()!!
@@ -22,7 +22,7 @@ class Rectangle: Behaviors {
         height = _height.toInt()
     }
 
-    override fun drawFigure(): String{
+    override fun drawFigure(): String{//Dibuja la figura
         var rectangle: String = ""
         for (i in 1..height){
             for (j in 1..width){

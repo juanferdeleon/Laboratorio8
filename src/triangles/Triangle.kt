@@ -10,14 +10,14 @@ class Triangle: Behaviors{
         height = _height
     }
 
-    override fun getDescription(){
+    override fun getDescription(){//Permite al usuario pedir medidas
         println("Dibujando un cuadrado: ")
         print("Ingrese la arista: ")
         val _height: String = readLine()!!
         height = _height.toInt()
     }
 
-    override fun drawFigure(): String{
+    override fun drawFigure(): String{//Dibuja la figura
         var triangle: String = ""
         var ctr: Int = height
         var ctr3: Int = 0
